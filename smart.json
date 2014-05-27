@@ -1,0 +1,6 @@
+{
+  "packages": {
+    "fast-render": {},
+    "iron-router": {}
+  }
+}

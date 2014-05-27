@@ -1,0 +1,39 @@
+<head>
+	<title>fastrenderrepo</title>
+</head>
+
+<body>
+</body>
+<template name="hello">hi
+	{{>loginButtons}}
+</template>
+<template name="layout">
+	<div class="content">
+		{{>yield}}
+	</div>
+</template>
+<template name="tempLogin">
+	{{>login}}
+	{{>register}}
+</template>
+<template name="login">
+	<form>
+		<h3>Login</h3>
+		<label>Email</label>
+		<input type="text" placeholder="Email" id="login-username">
+		<i class="user icon"></i>
+		<label>Password</label>
+		<input type="password" id="login-password">
+		<button type="submit">Login</button>
+	</form>
+</template>
+<template name="register">
+	<form>
+		<h3>Register</h3>
+		<label>Email</label>
+		<input placeholder="Email" id="account-email" type="email" required>
+		<label>Password</label>
+		<input type="password" id="account-password" required>
+		<button type="submit">Register</button>   
+	</form>
+</template>
